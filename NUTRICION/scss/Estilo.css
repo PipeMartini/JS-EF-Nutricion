@@ -1,0 +1,99 @@
+#areaA {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+#areaA:hover {
+  background-color: #d8d8d8;
+  color: #2f00ff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 2px;
+}
+
+#areaB {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+#areaB:hover {
+  background-color: #d8d8d8;
+  color: #2f00ff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 2px;
+}
+
+.Diet1 {
+  background-color: #b4da7b;
+}
+
+.Diet2 {
+  background-color: #aea8ff;
+}
+
+.Diet3 {
+  background-color: #fdff7b;
+}
+
+.Diet4 {
+  background-color: #ffa6ec;
+}
+
+.Diet5 {
+  background-color: #ffb867;
+}
+
+.Diet6 {
+  background-color: #f4ff5c;
+}
+
+.Diet7 {
+  background-color: #76fff4;
+}
+
+.Diet8 {
+  background-color: #ff7d7d;
+}
+
+.Diet9 {
+  background-color: #dedfdd;
+}
+
+#inicio:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #2f00ff;
+}
+
+#Secuencia {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  padding: 5rem 5rem 5rem 5rem;
+  margin-top: 5rem;
+  display: none;
+}
+
+h2 {
+  padding: 1.5rem 3rem 1rem 1rem;
+  background-color: #5f5f5f;
+  color: white;
+}
+
+h1 {
+  color: #070707;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#MensajeEmergente {
+  color: #fdfdfd;
+  font-size: 25px;
+  background-color: #2768ca;
+  border-radius: 8px;
+  padding: 5px 0px 5px 15px;
+  margin: 10px 0px 0px 0px;
+  display: none;
+}
+/*# sourceMappingURL=Estilo.css.map */

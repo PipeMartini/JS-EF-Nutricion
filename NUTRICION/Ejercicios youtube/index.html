@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/calcular.php" method="post">
+        <h1>calcular el pedido</h1>
+        <label for="">producto:</label>
+            <select name="producto" id="">
+                <option value="arroz">arroz</option>
+                <option value="leche">leche</option>
+                <option value="azucar">azucar</option>
+                <option value="yogurt">yogurt</option>
+            </select>
+            <label for="">Precio: </label>
+            <input type="text" name="precio">
+            <label for="">Cantidad: </label>
+            <input type="text" name="cantidad">
+            <input type="submit" value="calcular">
+    </form>
+</body>
+</html>

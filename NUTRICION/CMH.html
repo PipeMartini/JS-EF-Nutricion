@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="scss/estilo.css">
+        <script src="js/Enviado.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script defer src="js/main.js" defer></script>
+    
+    <title>Nutrición</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a id="inicio" class="navbar-brand" href="index.html">INICIO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SELECCIONA AREA
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a id="areaA" class="container fluid" href="Pediatria.html">PEDIATRIA</a>
+                            <a id="areaB" class="container fluid" href="UCI.html">UCI</a>
+                            <a id="areaA" class="container fluid" href="MAT.html">MAT</a>
+                            <a id="areaB" class="container fluid" href="CMM.html">CMM</a>
+                            <a id="areaA" class="container fluid" href="SalaCovid.html">Sala covid</a>
+                            <a id="areaB" class="container fluid" href="CMH.html">CMH</a>
+                            <a id="areaA" class="container fluid" href="NEO.html">NEO</a>
+                            <a id="areaB" class="container fluid" href="UTI.html">UTI</a>
+                            <a id="areaA" class="container fluid" href="HSM.html">HSM</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a id="inicio" class="navbar-brand" href="Tablas.html">COCINA</a>
+            <a id="inicio" class="navbar-brand" href="TablasImpresion.html">IMPRIMIBLE</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id= "Areas">CMH</h2>
+<!-- AREA-->
+<div class="form-group container mg-auto col-lg-6 col-m-12 col-sm-12">
+
+    <!-- ingreso del nº de cama-->
+    <label for="formGroupExampleInput" class="mt-3">Nº de cama</label>
+    <input id="Ncamas" type="number" class="form-control" id="formGroupExampleInput" placeholder="Nº de cama">
+</div>
+<div class="form-group container mg-auto col-lg-6 col-m-12 col-sm-12">
+    <!-- ingreso del nombre y apellido del paciente-->
+    <label for="formGroupExampleInput" class="mt-3">Paciente</label>
+    <input id="PacienteNombre" type="text" class="form-control" placeholder="Nombre">
+    <label for="formGroupExampleInput"></label>
+    <input  id="PacienteApellido" type="text" class="form-control" placeholder="Apellido">
+    <!-- ingreso dieta-->
+    <label for="formGroupExampleInput" class="mt-3">Dieta</label>
+    <select id="SeleccionDieta" class="form-control container mg-auto">
+        <option class="SelecDiet">Seleccione Dieta</option>
+        <option class="General c/p. blando">General c/p. blando</option>
+        <option class="General cortado">General cortado</option>
+        <option class="SinSal">Sin Sal</option>
+        <option class="LivianaSinSalc/p.Blando">Liviana sin sal c/p. blando</option>
+        <option class="LivianaSinSal/cortado">Liviana sin sal/cortado</option>
+        <option class="Blando">Blando</option>
+        <option class="BlandoConPollo">Blando con pollo</option>
+        <option class="Astingente">Astingente</option>
+        <option class="DBT">DBT</option>
+        <option class="Liquado">Licuado</option>
+        <option class="Liquido">Liquido</option>
+        <option class="Vegetariano">Vegetariano</option>
+    </select>
+
+    <!-- CHECK BOX-->
+    <div class="form-check mt-3">
+        <input id="Descartable" class="form-check-input" type="checkbox" value="Descartable">
+        <label class="form-check-label" for="flexCheckDefault">Descartable</label>
+    </div>   
+    
+    <!-- boton-->
+    <a href="#" onclick="recolector()" id="enviardatos" class="btn btn-primary btn-lg active mt-4" role="button" aria-pressed="true">ENVIAR</a>
+    <div id="MensajeEmergente" class= "col-6 container">Los datos fueron enviados!</div>
+</div>
+</main>
+<script src="js/tabla.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+
+</html>
