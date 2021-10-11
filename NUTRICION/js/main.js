@@ -14,33 +14,43 @@ class Dieta {
 let dietas=[]
 if (localStorage.getItem('dietas') != null) {
     dietas = JSON.parse(localStorage.getItem('dietas'));
-}
+};
 
 let recolector = function() {
 let area = document.getElementById("Areas").textContent;
 
-let subarea = document.getElementById("SubAreas").value
-var str = '',
-for (let i = 0 ; i < recolector.length ; i ++)
- if (subarea[i].checked === true) { str += subarea.value + ""}
+
+
+
+
+//let subarea = function(sarea) {
+//    if(document.getElementById("SubAreas").value= ''){
+//    sarea = document.getElementById("SubAreas").value;
+//}else (document.getElementById("SubAreas").value = null);{
+//    sarea = "no se encontro valor";
+//}};
+var subarea = document.getElementById("SubAreas");
+console.log(subarea);
+if(subarea == null){
+subarea = 'no se encontró valor'
+}else{
+subarea = document.getElementById("SubAreas").value
+}
 
 let cama = document.getElementById("Ncamas").value;
 let nombre = document.getElementById("PacienteNombre").value;
 let apellido = document.getElementById("PacienteApellido").value;
 let dieta = document.getElementById("SeleccionDieta").value;
 let descartable = document.getElementById("Descartable").checked;
-//let menuInfantil = document.getElementById("MenuInfantil").checked(a => (a === "true") ? 'true' : 'invalid');;
-//function MenuInfantil_Pediatria (){
-//    let menuInfantil = document.getElementById("MenuInfantil").checked;
-//        if(menuInfantil == "true") {
-//            MenuInfantil_Pediatria = true
-//        }else (null); {
-//            MenuInfantil_Pediatria = false;
-//    }
-//};
-dietas.push(new Dieta (area, Sub_Areas_Pediatria, cama, nombre, apellido, dieta, descartable));
+var menuInfantil = document.getElementById("MenuInfantil");
+if(menuInfantil == null){
+    menuInfantil = 'No'
+}else{
+    menuInfantil = 'Si' + document.getElementById("MenuInfantil").checked
+}
+dietas.push(new Dieta (area, subarea, cama, nombre, apellido, dieta, descartable));
 localStorage.setItem("dietas",JSON.stringify(dietas));
 
-console.log("Area: "+ area + "    Subarea:"+ str + "    n° de cama: " + cama +"    Nombre y apellido: "+ nombre +" "+ apellido + "    Tipo de dieta: " + dieta + "    Descartable: "+ descartable + " menuinfantil ");
+console.log("Area: "+ area + "    Subarea:"+ subarea + "    n° de cama: " + cama +"    Nombre y apellido: "+ nombre +" "+ apellido + "    Tipo de dieta: " + dieta + "    Descartable: "+ descartable + " menuinfantil ");
 
 }
